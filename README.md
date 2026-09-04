@@ -34,3 +34,17 @@ python3 burnclient.py --burnserver 10.0.12.188:1234 --event run-vivado --icemanp
 
 
 
+
+## Install and run
+
+```bash
+make install     # pip install -r requirements.txt
+make server      # python burnserver.py
+```
+
+Vivado must be on `PATH` on the machine running the server — the `.tcl` scripts
+(`burnbit.tcl`, `burnmsc.tcl`) are executed through it.
+
+## License
+
+Apache-2.0. See [LICENSE](LICENSE).
